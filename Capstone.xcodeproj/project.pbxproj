@@ -35,6 +35,9 @@
 		36BDD97C29580A7800F4EAD3 /* GamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BDD97B29580A7800F4EAD3 /* GamesModel.swift */; };
 		36BDD97E29580EC300F4EAD3 /* FavoriteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BDD97D29580EC300F4EAD3 /* FavoriteInteractor.swift */; };
 		36BDD98029580F3B00F4EAD3 /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BDD97F29580F3B00F4EAD3 /* FavoritePresenter.swift */; };
+		36BDDC5C296B097C00CD4211 /* FavoriteViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BDDC4D296B08FD00CD4211 /* FavoriteViewTests.swift */; };
+		36BDDC60296B0B7C00CD4211 /* MockFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BDDC5F296B0B7C00CD4211 /* MockFavoriteView.swift */; };
+		36BDDC63296B105A00CD4211 /* MainMockHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BDDC62296B105A00CD4211 /* MainMockHelper.swift */; };
 		4D120A6A294EE3AF00ED794F /* GameListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D120A68294EE3AF00ED794F /* GameListCollectionViewCell.swift */; };
 		4D120A6B294EE3AF00ED794F /* GameListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D120A69294EE3AF00ED794F /* GameListCollectionViewCell.xib */; };
 		4D120A6D294EFA7800ED794F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D120A6C294EFA7800ED794F /* Extension.swift */; };
@@ -70,7 +73,18 @@
 		4D5EF82D294CB73B00422359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5EF82C294CB73B00422359 /* Assets.xcassets */; };
 		4D5EF830294CB73B00422359 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5EF82E294CB73B00422359 /* LaunchScreen.storyboard */; };
 		760CBD8864D98CBC4BA6629D /* Pods_Capstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F430D792BF8B9EBD418DBC3 /* Pods_Capstone.framework */; };
+		A2905779D7FF381E1AA074DF /* Pods_CapstoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71366C6CADE949ABBE5A052E /* Pods_CapstoneTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36BDDC57296B097500CD4211 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D5EF818294CB73700422359 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D5EF81F294CB73700422359;
+			remoteInfo = Capstone;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0B0CADE69A24FDCD2B907A7D /* Pods-Capstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone.debug.xcconfig"; path = "Target Support Files/Pods-Capstone/Pods-Capstone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +117,10 @@
 		36BDD97B29580A7800F4EAD3 /* GamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesModel.swift; sourceTree = "<group>"; };
 		36BDD97D29580EC300F4EAD3 /* FavoriteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInteractor.swift; sourceTree = "<group>"; };
 		36BDD97F29580F3B00F4EAD3 /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
+		36BDDC4D296B08FD00CD4211 /* FavoriteViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewTests.swift; sourceTree = "<group>"; };
+		36BDDC53296B097500CD4211 /* CapstoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapstoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36BDDC5F296B0B7C00CD4211 /* MockFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFavoriteView.swift; sourceTree = "<group>"; };
+		36BDDC62296B105A00CD4211 /* MainMockHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMockHelper.swift; sourceTree = "<group>"; };
 		4D120A68294EE3AF00ED794F /* GameListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListCollectionViewCell.swift; sourceTree = "<group>"; };
 		4D120A69294EE3AF00ED794F /* GameListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameListCollectionViewCell.xib; sourceTree = "<group>"; };
 		4D120A6C294EFA7800ED794F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -139,10 +157,21 @@
 		4D5EF82C294CB73B00422359 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D5EF82F294CB73B00422359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D5EF831294CB73B00422359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71366C6CADE949ABBE5A052E /* Pods_CapstoneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapstoneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D26FC99045CD2AB86717128 /* Pods-CapstoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneTests.release.xcconfig"; path = "Target Support Files/Pods-CapstoneTests/Pods-CapstoneTests.release.xcconfig"; sourceTree = "<group>"; };
 		BE47387257549CA3F5BBC71D /* Pods-Capstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone.release.xcconfig"; path = "Target Support Files/Pods-Capstone/Pods-Capstone.release.xcconfig"; sourceTree = "<group>"; };
+		C3E5909382D4E974472199C8 /* Pods-CapstoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapstoneTests.debug.xcconfig"; path = "Target Support Files/Pods-CapstoneTests/Pods-CapstoneTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		36BDDC50296B097500CD4211 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2905779D7FF381E1AA074DF /* Pods_CapstoneTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D5EF81D294CB73700422359 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				0F430D792BF8B9EBD418DBC3 /* Pods_Capstone.framework */,
+				71366C6CADE949ABBE5A052E /* Pods_CapstoneTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,6 +238,24 @@
 				36A2A8132958C9C70052DB20 /* FavoriteTableViewCell.xib */,
 			);
 			path = "Favorite Cell";
+			sourceTree = "<group>";
+		};
+		36BDDC54296B097500CD4211 /* CapstoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				36BDDC5E296B0B6700CD4211 /* Home Tests */,
+				36BDDC62296B105A00CD4211 /* MainMockHelper.swift */,
+			);
+			path = CapstoneTests;
+			sourceTree = "<group>";
+		};
+		36BDDC5E296B0B6700CD4211 /* Home Tests */ = {
+			isa = PBXGroup;
+			children = (
+				36BDDC4D296B08FD00CD4211 /* FavoriteViewTests.swift */,
+				36BDDC5F296B0B7C00CD4211 /* MockFavoriteView.swift */,
+			);
+			path = "Home Tests";
 			sourceTree = "<group>";
 		};
 		4D12B2E3294CC26500949DAA /* Supporting Files */ = {
@@ -505,6 +553,7 @@
 			isa = PBXGroup;
 			children = (
 				4D5EF822294CB73700422359 /* Capstone */,
+				36BDDC54296B097500CD4211 /* CapstoneTests */,
 				4D5EF821294CB73700422359 /* Products */,
 				F5D065BDA11AD31AB7CD1372 /* Pods */,
 				301512FD35B6E4A10B4F7621 /* Frameworks */,
@@ -515,6 +564,7 @@
 			isa = PBXGroup;
 			children = (
 				4D5EF820294CB73700422359 /* Capstone.app */,
+				36BDDC53296B097500CD4211 /* CapstoneTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -535,6 +585,8 @@
 			children = (
 				0B0CADE69A24FDCD2B907A7D /* Pods-Capstone.debug.xcconfig */,
 				BE47387257549CA3F5BBC71D /* Pods-Capstone.release.xcconfig */,
+				C3E5909382D4E974472199C8 /* Pods-CapstoneTests.debug.xcconfig */,
+				8D26FC99045CD2AB86717128 /* Pods-CapstoneTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -542,6 +594,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		36BDDC52296B097500CD4211 /* CapstoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36BDDC59296B097500CD4211 /* Build configuration list for PBXNativeTarget "CapstoneTests" */;
+			buildPhases = (
+				96A9EF365DB63C2F91E90655 /* [CP] Check Pods Manifest.lock */,
+				36BDDC4F296B097500CD4211 /* Sources */,
+				36BDDC50296B097500CD4211 /* Frameworks */,
+				36BDDC51296B097500CD4211 /* Resources */,
+				AD41645859E09C268BEB34E7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36BDDC58296B097500CD4211 /* PBXTargetDependency */,
+			);
+			name = CapstoneTests;
+			productName = CapstoneTests;
+			productReference = 36BDDC53296B097500CD4211 /* CapstoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4D5EF81F294CB73700422359 /* Capstone */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D5EF834294CB73B00422359 /* Build configuration list for PBXNativeTarget "Capstone" */;
@@ -569,9 +641,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					36BDDC52296B097500CD4211 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 4D5EF81F294CB73700422359;
+					};
 					4D5EF81F294CB73700422359 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -591,11 +667,19 @@
 			projectRoot = "";
 			targets = (
 				4D5EF81F294CB73700422359 /* Capstone */,
+				36BDDC52296B097500CD4211 /* CapstoneTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		36BDDC51296B097500CD4211 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D5EF81E294CB73700422359 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -639,6 +723,45 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		96A9EF365DB63C2F91E90655 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CapstoneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD41645859E09C268BEB34E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapstoneTests/Pods-CapstoneTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapstoneTests/Pods-CapstoneTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CapstoneTests/Pods-CapstoneTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DE9F865A4B6F1C2B0EFBC85A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -681,6 +804,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		36BDDC4F296B097500CD4211 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36BDDC5C296B097C00CD4211 /* FavoriteViewTests.swift in Sources */,
+				36BDDC60296B0B7C00CD4211 /* MockFavoriteView.swift in Sources */,
+				36BDDC63296B105A00CD4211 /* MainMockHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D5EF81C294CB73700422359 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -736,6 +869,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		36BDDC58296B097500CD4211 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D5EF81F294CB73700422359 /* Capstone */;
+			targetProxy = 36BDDC57296B097500CD4211 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		4D5EF829294CB73700422359 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -756,6 +897,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		36BDDC5A296B097500CD4211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3E5909382D4E974472199C8 /* Pods-CapstoneTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6N9NGKD3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/phincon/Documents/Ade Reskita/iOS Project/CapstoneCICD/Capstone/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adereskita.CapstoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capstone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Capstone";
+			};
+			name = Debug;
+		};
+		36BDDC5B296B097500CD4211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D26FC99045CD2AB86717128 /* Pods-CapstoneTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6N9NGKD3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/phincon/Documents/Ade Reskita/iOS Project/CapstoneCICD/Capstone/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adereskita.CapstoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capstone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Capstone";
+			};
+			name = Release;
+		};
 		4D5EF832294CB73B00422359 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -806,8 +995,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "/Users/adereskita/Documents/Ade Reskita/iOS Project/Capstone/Capstone/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				INFOPLIST_FILE = "/Users/phincon/Documents/Ade Reskita/iOS Project/CapstoneCICD/Capstone/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -861,8 +1050,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "/Users/adereskita/Documents/Ade Reskita/iOS Project/Capstone/Capstone/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				INFOPLIST_FILE = "/Users/phincon/Documents/Ade Reskita/iOS Project/CapstoneCICD/Capstone/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -882,7 +1071,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L6N9NGKD3Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "/Users/phincon/Documents/Ade Reskita/iOS Project/Capstone/Capstone/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "/Users/phincon/Documents/Ade Reskita/iOS Project/CapstoneCICD/Capstone/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -896,6 +1085,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = adereskita.Capstone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -912,7 +1104,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L6N9NGKD3Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "/Users/phincon/Documents/Ade Reskita/iOS Project/Capstone/Capstone/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "/Users/phincon/Documents/Ade Reskita/iOS Project/CapstoneCICD/Capstone/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -926,6 +1118,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = adereskita.Capstone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -935,6 +1130,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		36BDDC59296B097500CD4211 /* Build configuration list for PBXNativeTarget "CapstoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36BDDC5A296B097500CD4211 /* Debug */,
+				36BDDC5B296B097500CD4211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4D5EF81B294CB73700422359 /* Build configuration list for PBXProject "Capstone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

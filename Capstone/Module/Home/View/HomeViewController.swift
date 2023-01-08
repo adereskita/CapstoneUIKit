@@ -19,12 +19,6 @@ class HomeViewController: UIViewController {
     private var searchGames: [GameResult]?
     private let disposeBag = DisposeBag()
     
-//    convenience init(presenter: HomePresenter, router: HomeRouter) {
-//        self.init()
-//        self.presenter = presenter
-//        self.router = router
-//    }
-    
     init(with presenter: HomePresenter, router: HomeRouter) {
         self.presenter = presenter
         self.router = router
