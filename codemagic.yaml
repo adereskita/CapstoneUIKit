@@ -8,6 +8,9 @@ workflows:
           XCODE_PROJECT: "Capstone.xcodeproj"
           XCODE_SCHEME: "Capstone"
     scripts:
+      - name: Install CocoaPods dependencies
+        script: | 
+          pod install
       - name: Run tests
         script: |
           xcodebuild \

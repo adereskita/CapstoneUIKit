@@ -20,14 +20,7 @@ final class FavoriteViewTests: XCTestCase {
         mockService = MockFavoriteView(repository: mockService.provideRepository())
         presenter = FavoritePresenter(favoriteUseCase: mockService)
         controller = FavoriteViewController(with: presenter!)
-        let _ = controller?.view
-        
-        let favoriteUseCase = Injection.init().provideFavorites()
-        let presenter = FavoritePresenter(favoriteUseCase: favoriteUseCase)
-        let favVC = FavoriteViewController(with: presenter)
-        
-        controller?.tableView?.reloadData()
-        controller?.loadViewIfNeeded()
+        controller?.view
     }
     
     override func tearDown() {
