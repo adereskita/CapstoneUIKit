@@ -1,5 +1,6 @@
-workflows:  ios-project-debug: # workflow ID
-    name: iOS debug # workflow name
+workflows:
+ios-project-debug:
+    name: iOS debug
     environment:
       xcode: latest
       cocoapods: default
