@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeHeaderTableViewCell" rowHeight="49" id="KGk-i7-Jjw" customClass="HomeHeaderTableViewCell" customModule="Capstone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ade" translatesAutoresizingMaskIntoConstraints="NO" id="k3Z-3z-lFa">
+                        <rect key="frame" x="16" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="k3Z-3z-lFa" secondAttribute="height" multiplier="1:1" id="8um-zx-li9"/>
+                            <constraint firstAttribute="height" constant="44" id="Vn2-Cm-ddv"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfh-Z9-XhY">
+                        <rect key="frame" x="260" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="wfh-Z9-XhY" secondAttribute="height" multiplier="1:1" id="tk9-wl-ZkY"/>
+                            <constraint firstAttribute="width" constant="44" id="ush-66-SgA"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal">
+                            <imageReference key="image" image="heart.fill" catalog="system" symbolScale="default"/>
+                        </state>
+                        <connections>
+                            <action selector="didTapFavorite:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JsF-yj-aEK"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wfh-Z9-XhY" secondAttribute="trailing" constant="16" id="N11-qh-7Iu"/>
+                    <constraint firstItem="wfh-Z9-XhY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="VhX-ey-FsP"/>
+                    <constraint firstAttribute="bottom" secondItem="wfh-Z9-XhY" secondAttribute="bottom" constant="8" id="bW7-ij-ROi"/>
+                    <constraint firstItem="k3Z-3z-lFa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="evJ-Js-YTP"/>
+                    <constraint firstAttribute="bottom" secondItem="k3Z-3z-lFa" secondAttribute="bottom" constant="8" id="m2g-rh-czL"/>
+                    <constraint firstItem="k3Z-3z-lFa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xaE-LZ-9rC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="favoriteButton" destination="wfh-Z9-XhY" id="PzD-gd-6Ri"/>
+                <outlet property="imageHeader" destination="k3Z-3z-lFa" id="FeQ-uU-MyU"/>
+            </connections>
+            <point key="canvasLocation" x="120.61068702290076" y="27.464788732394368"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ade" width="400" height="400"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

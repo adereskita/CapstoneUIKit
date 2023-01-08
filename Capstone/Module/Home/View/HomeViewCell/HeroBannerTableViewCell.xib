@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeroBannerTableViewCell" rowHeight="159" id="KGk-i7-Jjw" customClass="HeroBannerTableViewCell" customModule="Capstone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7go-hD-j9n">
+                        <rect key="frame" x="16" y="16" width="306" height="112"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Let's Download a game to start" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohe-qb-0D9">
+                                <rect key="frame" x="16" y="8" width="150" height="96"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ohe-qb-0D9" firstAttribute="top" secondItem="7go-hD-j9n" secondAttribute="top" constant="8" id="51V-oF-n49"/>
+                            <constraint firstItem="ohe-qb-0D9" firstAttribute="leading" secondItem="7go-hD-j9n" secondAttribute="leading" constant="16" id="TEr-4j-Mz4"/>
+                            <constraint firstAttribute="bottom" secondItem="ohe-qb-0D9" secondAttribute="bottom" constant="8" id="xHU-GG-gSL"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocket" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKR-rn-dj3">
+                        <rect key="frame" x="194" y="0.0" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="LaE-C4-orC"/>
+                            <constraint firstAttribute="width" secondItem="VKR-rn-dj3" secondAttribute="height" multiplier="1:1" id="eYI-kn-ux7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VKR-rn-dj3" firstAttribute="top" secondItem="7go-hD-j9n" secondAttribute="top" constant="-16" id="1uz-Y3-lJ4"/>
+                    <constraint firstAttribute="bottom" secondItem="7go-hD-j9n" secondAttribute="bottom" constant="16" id="G9c-pr-uqM"/>
+                    <constraint firstItem="VKR-rn-dj3" firstAttribute="bottom" secondItem="7go-hD-j9n" secondAttribute="bottom" constant="-8" id="HXB-2z-3fS"/>
+                    <constraint firstItem="VKR-rn-dj3" firstAttribute="leading" secondItem="ohe-qb-0D9" secondAttribute="trailing" constant="12" id="O4d-8K-y0h"/>
+                    <constraint firstItem="7go-hD-j9n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="VKq-S9-SJb"/>
+                    <constraint firstAttribute="trailing" secondItem="7go-hD-j9n" secondAttribute="trailing" constant="16" id="a6C-qn-owp"/>
+                    <constraint firstItem="VKR-rn-dj3" firstAttribute="trailing" secondItem="7go-hD-j9n" secondAttribute="trailing" constant="-8" id="bGl-fR-BLk"/>
+                    <constraint firstItem="7go-hD-j9n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="eZm-WV-aKt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cardView" destination="7go-hD-j9n" id="jCL-Gd-8Qn"/>
+                <outlet property="heroImage" destination="VKR-rn-dj3" id="247-gY-qQI"/>
+                <outlet property="heroLabel" destination="ohe-qb-0D9" id="jcL-hO-iAm"/>
+            </connections>
+            <point key="canvasLocation" x="36.231884057971016" y="59.933035714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rocket" width="2160" height="2160"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
