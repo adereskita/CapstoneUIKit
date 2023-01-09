@@ -5,6 +5,7 @@ workflows:
       xcode: latest
       cocoapods: default
       vars:
+        XCODE_PROJECT: "Capstone.xcodeproj"
         XCODE_WORKSPACE: "Capstone.xcworkspace"
         XCODE_SCHEME: "Capstone"
     scripts:
@@ -14,14 +15,14 @@ workflows:
       - name: Run tests
         script: |
           xcodebuild \
-          -workspace "$XCODE_WORKSPACE" \
+          -project "$XCODE_PROJECT" \
           -scheme "$XCODE_SCHEME" \
           -sdk iphonesimulator \
           -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.4' \
           -clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO          
       - name: Build debug app
         script: |
-          xcodebuild build -workspace "$XCODE_WORKSPACE" \
+          xcodebuild build -project "$XCODE_PROJECT" \
           -scheme "$XCODE_SCHEME" \
           CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO          
     artifacts:
