@@ -3,11 +3,14 @@ workflows:
     name: iOS debug # workflow name
     environment:
       xcode: latest
-      cocoapods: default
+      cocoapods: 1.11.2
       vars:
         XCODE_WORKSPACE: "Capstone.xcworkspace"
         XCODE_SCHEME: "Capstone"
     scripts:
+      - name: Install CocoaPods dependencies
+        script: | 
+          pod install
       - name: Run tests
         script: |
           xcodebuild \
