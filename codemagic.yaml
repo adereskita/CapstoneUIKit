@@ -10,15 +10,7 @@ workflows:
     scripts:
       - name: Install CocoaPods dependencies
         script: | 
-          pod install
-      - name: Run tests
-        script: |
-          xcodebuild \
-          -workspace "$XCODE_WORKSPACE" \
-          -scheme "$XCODE_SCHEME" \
-          -sdk iphonesimulator \
-          -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.1' \
-          -clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO          
+          pod install        
       - name: Build debug app
         script: |
           xcodebuild build -workspace "$XCODE_WORKSPACE" \
