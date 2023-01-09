@@ -5,9 +5,8 @@ workflows:
       xcode: latest
       cocoapods: default
       vars:
-          XCODE_PROJECT: "Capstone.xcodeproj"
-          XCODE_WORKSPACE: "Capstone.xcworkspace"
-          XCODE_SCHEME: "Capstone"
+        XCODE_WORKSPACE: "Capstone.xcworkspace"
+        XCODE_SCHEME: "Capstone"
     scripts:
       - name: Install CocoaPods dependencies
         script: | 
