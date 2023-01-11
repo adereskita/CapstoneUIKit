@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '13.5'
+platform :ios, '11.0'
 
 target 'Capstone'do
   # Comment the next line if you don't want to use dynamic frameworks
