@@ -28,6 +28,7 @@
 		3620ACDB2957949A00B61693 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3620ACD92957949A00B61693 /* AboutViewController.swift */; };
 		3620ACDC2957949A00B61693 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3620ACDA2957949A00B61693 /* AboutViewController.xib */; };
 		3620ACDF2958017300B61693 /* FavoriteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3620ACDE2958017300B61693 /* FavoriteEntity.swift */; };
+		3667A1ED296E9896005FA2A8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D5EF831294CB73B00422359 /* Info.plist */; };
 		36A2A8142958C9C70052DB20 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A2A8122958C9C70052DB20 /* FavoriteTableViewCell.swift */; };
 		36A2A8152958C9C70052DB20 /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A2A8132958C9C70052DB20 /* FavoriteTableViewCell.xib */; };
 		36A2A8172958D29B0052DB20 /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A2A8162958D29B0052DB20 /* FavoriteRouter.swift */; };
@@ -694,6 +695,7 @@
 				4D12B312294DDC9C00949DAA /* GameListTableViewCell.xib in Resources */,
 				3620ACD629577C1800B61693 /* DetailGenresCollectionViewCell.xib in Resources */,
 				4D12B30E294DDABC00949DAA /* HeroBannerTableViewCell.xib in Resources */,
+				3667A1ED296E9896005FA2A8 /* Info.plist in Resources */,
 				4D12B302294DD45700949DAA /* HomeHeaderTableViewCell.xib in Resources */,
 				4D12B2F3294CC56200949DAA /* FavoriteViewController.xib in Resources */,
 				4D5EF82B294CB73700422359 /* Main.storyboard in Resources */,
