@@ -73,8 +73,6 @@
 		4D5EF82B294CB73700422359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5EF829294CB73700422359 /* Main.storyboard */; };
 		4D5EF82D294CB73B00422359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5EF82C294CB73B00422359 /* Assets.xcassets */; };
 		4D5EF830294CB73B00422359 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5EF82E294CB73B00422359 /* LaunchScreen.storyboard */; };
-		760CBD8864D98CBC4BA6629D /* Pods_Capstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F430D792BF8B9EBD418DBC3 /* Pods_Capstone.framework */; };
-		A2905779D7FF381E1AA074DF /* Pods_CapstoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71366C6CADE949ABBE5A052E /* Pods_CapstoneTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
